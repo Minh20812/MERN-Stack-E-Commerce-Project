@@ -27,6 +27,7 @@ router
   .put(authenticate, updateCurrentUserProfile);
 
 // Route for admin to manage users
+
 router
   .route("/:id")
   .delete(authenticate, authorizeAdmin, deleteUserById)

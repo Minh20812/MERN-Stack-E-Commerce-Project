@@ -9,9 +9,9 @@ import userRoutes from "./routes/userRoutes.js";
 dotenv.config();
 const port = process.env.PORT || 5000;
 
-connectDB();
+connectDB(); //kết nối đến cơ sở dữ liệu
 
-const app = express();
+const app = express(); //khởi tạo express app
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
